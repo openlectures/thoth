@@ -1,0 +1,115 @@
+\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+
+\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
+
+% Universal Fixes
+\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
+\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
+
+% Math
+\usepackage{amsmath} % Swiss-knife math package
+
+% Graphics
+\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
+\usepackage{graphicx} % Allows inserting of graphics and images
+\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
+
+% Layout and Format
+\usepackage{parallel} % Aligns paragraphs across columns
+\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
+\usepackage{showkeys} % Shows label references where they are defined
+\usepackage{csquotes} % Fixes inline and display quotations
+\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
+
+% Tables and Figures
+\usepackage{booktabs} % For drawing nice tables with proper line weights
+\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
+\usepackage{subfig} % Figure-ception - Allows figures within figures
+\usepackage{array}  % Extends options for column formats, alignments and layouts
+\usepackage{tabu} % Provides better control for tables and column widths
+\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
+\usepackage{multicol} % Allows spanning columns in tables
+\usepackage{caption} % Allows greater customization of captions and captions outside floats
+
+% Referencing
+\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
+\usepackage{cleveref} % Adds semantic naming when referencing figures
+\usepackage{varioref} % Introduces referencing by page instead of figure number
+
+% Fonts and Typography
+\usepackage{microtype} % Tweaks smallish fonts and kernings
+\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
+\usepackage{siunitx} % Provides support for typesetting SI units
+\usepackage{ellipsis} % Fixes space uneveness around ellipses
+\usepackage{url} % Allows encapsulated URLs to break across lines
+\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
+
+\usepackage{euler}
+
+\ifxetex
+\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
+\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
+\fi
+\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
+\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
+
+\setkomafont{title}{\fontencoding{EU1}\sffamily}
+\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
+
+% Title Information
+\title{3 Writing and Structing Your Essay}
+\author{\large by Su Hang}
+\date{\small correct as of \today}
+\begin{document}
+\maketitle
+\section{The 5 Paragraph Hamburger Rule}
+The Hamburger essay, as you may or may not have learnt of before, has a particular structure that allows you to present your arguments in an organised and coherent manner. The general structure of one looks like this. You start off with the introduction, the cap bread on top, and then go on to the supporting points, the meat patty, lettuce, tomato, and cheese of the hamburger. After including all that wholesome goodness, you end off with the conclusion, another capping bread, giving you a well put together essay that is easy to for the reader to ingest, and digest.
+
+Lots of people, me included, scoff at the usage of a "template" for writing essays. But the plain and simple truth is that you are taking a standardised test, and a standardised test with an insane time limit at that. Stick to this template, and you’ll never go wrong. Even if you are an advanced writer who may think that a standard template is beneath you. Nobody is going to dig your essay up and laugh at your use of this elementary essay template. All colleges see, is the score you get from the essay, and for all you know, your creative writing hijinks may not be received well by the graders. The hamburger, on the other hand, is universal and will help you to score well consistently, for any kinds of graders you may encounter. In the following checkpoints, we will look into each of the components of this tasty essay hamburger in greater detail.
+\section{Writing an Introduction}
+Your SAT essay’s introduction has essentially two parts that can be tackled with a sentence each. These two parts are the starting hook, and your thesis statement.
+
+The function of the hook is to, well, capture your reader’s attention and signal to them that there is a great essay that is worth reading in front of them. You can start with something interesting, like a quote, or a pun on an aphorism, like say, "The early bird gets the can of worms." Alternatively, you can choose to sound more level headed by giving a conventional lay of the land if you’re not up to the first method under stress. If you choose this second way, do try to spice it up with your vocabulary and wording! Let’s say that our prompt is, "Do all people need to be creative?", and our stand is that, yes, all people need to be creative. Then we can write something like, "Creativity, as a habit of mind, is typically attributed to artists who have need for the unconventional to entertain their audiences." Through this sentence, you can establish the context and the tone of the essay. This clues the grader into what they are in for for the next two minutes or so.
+
+Then, state your stand in a thesis statement, in one sentence. A clearly defined stand is a basic requirement for any SAT essay! All prompts they give have two stands you can take: for, or against. So, a good thesis sentence should state 1) the issue given in the prompt, and 2) whether you are for, or against statement in the prompt. You may find that simply just saying, "Yes, I agree that creativity is essential for everybody" is quite a dumb way of going about it. Instead, try going in from a less direct approach by embellishing the sentence and paraphrasing the prompt. Going back to the creativity prompt, the thesis statement can be, "It is, however, sadly underrated by others: people of all walks of life would surely find that a touch of novelty can drastically augment their life and work." This thus establishes your stand on the issue in the essay without sounding like you are just lazily copying off the prompt.
+
+To recap, the introduction to your SAT essay should comprise of a one sentence hook, and a one sentence thesis statement. Don’t forget to show off your vocabulary as you are writing the introduction; the start is when the grader is paying the most attention! We will look at crafting the meat of the essay, the supporting points, in the next checkpoint.
+\section{Writing the Supporting Points}
+So now that we have our stand down pat, how do we go about writing the rest of the essay? Collegeboard’s instructions are to "Support your position with reasoning and examples taken from your reading, studies, experience, or observations." Let’s break this down. The position is mentioned in the singular. This means that whichever stand you chose in the introduction, you are not to deviate from it when writing! In each supporting point, both reasoning and examples should be employed to support the stand that you have indicated in the thesis statement. 
+
+In the SAT essay, you should generally provide two to three examples with corresponding reasoning and elaboration; two if each point is long, three if each is short. Put each point in a paragraph of its own, and just keep writing until you are left with about 5 lines on the last page for your conclusion.
+
+Each supporting paragraph is like a self-contained mini essay of its own, too, with its introduction, body, and contextualisation. When you are writing the essay, it’s enough to just write one sentence for each element of a supporting point.
+
+First, provide a one sentence lead in, a link from the previous content. This helps your essay flow better, providing logical progression from one point to another. So if your prompt is, "Do all people need to be creative?", and you answer yes, then you can write, "In science, even stereotypically stuffy researchers do their best work when struck by a bolt of inspiration from the heavens." "In science" helps the reader re-orientate themselves with the new example you are now raising, and adding the adverb "even" helps heighten the impact you are making with this new case!
+
+Then, cite the example you wish to use in a sentence or two with appropriate detail. This forms the main "meat" of your point, so craft it well and put in as much detail as you can muster to make it believable! Following from the lead in, you can write, "The discoverer of the benzene ring thought up its structure after dreaming of a snake eating its own tail after an afternoon nap, when for months prior to that he had made no progress at all."
+
+Lastly, elaborate on your example by reasoning out, in one sentence, how it is relevant to the context of the question. This reiterates to your grader that you aren’t just wandering off into unrelated territory, and that you know your shit about this topic. Continuing from the benzene ring example, you can write "By connecting what he had seen in that phantasmagoria of a dream to his work using his right, creative, brain, he made one of the most fundamental discoveries in biochemistry." Short, sweet, to the right point.
+
+Lather, rinse, and repeat for the next one or two supporting paragraphs that you write. In the next checkpoint, we will find out how to write a sterling finale to your essay.
+\section{Writing a Conclusion}
+After you’ve done all that work on your essay, the last lap isn’t really too hard to finish off. Like in the introduction, you would want to leave a lasting, well, last impression. This concluding affair is accomplished in two sentences: a rephrase of the thesis, and an impactful endnote.
+
+First, subtly rephrase your thesis, and summarise the supporting points that you put forth in your essay. For example, if your prompt is, "Do all people need to be creative?", and you answer yes, this can be as simple as something like "Thus, in fields, that are not usually associated with creativity such as science and politics, we see that the underdog is flourishing yet."
+
+To end off, write a sentence worth of witticism, humour, or rhetoric; just write something memorable and not too cheesy. This is the last memory your reader will have of this essay as they are debating what marks to give you, so make it count! Going back to the creativity prompt, you may choose to end off with, "If such prominent and important personages in our society subscribe to such an overlooked life habit, who are the rest of us to disclaim its usefulness for all of human civilisation?"
+
+Et voila. It is done. Take a deep breath, drink some water, and check through your work in the remaining time for embarrassing grammar, spelling, lexical choice errors. Try and fill up blank space remaining if you have any left.
+
+So now that you know exactly how to write a thumping good essay, we will show you how to manage your measly 25 minutes of test time in the next checkpoint.
+\section{How to Fully Utilise Your 25 Minutes}
+Lots of people complain about the insanely stingy 25 minutes that the SAT gives for writing a coherent, witty, entertaining essay. But what they don’t know, is that with proper planning and practice, an entire essay can be written with 5 minutes to spare for checking! Well, so how do we do that?
+
+When the proctor says, "You may turn the page and begin now," give yourself a few seconds of reading time. When I say a few seconds, I mean a few seconds, because that question page really does contain a lot of superfluous information that would just waste your time if you tried reading it. The only thing worth reading is the prompt, found here on the page. This prompt is usually a yes/no question that you can take a clearly defined stand on. 
+
+Then, use 5 minutes for brainstorming time. Think of 3 or 4 examples relating to the prompt, and write them down so you don’t forget! You can read the stuff in the box for inspiration if you get stuck and can’t think of what to write about. 
+
+Once you’ve thought up the examples, listen to what the examples tell you. If they agree with the prompt, then your stand should be that you concur. And vice versa. Under this level of stress, it is generally easier to think of your examples first, and then decide your stand, instead of deciding your stand and finding out later on that you can’t think of any more to support your point. If you don’t believe me, you can experiment with this during your essay practice time and find out which is a better way for yourself!
+
+After brainstorming, immediately start writing your essay using the Hamburger model that we covered in the previous checkpoints. You will find that it is perfectly possible to finish writing everything within 15 minutes. This means that on average, you should spend no more than 3 min on each of your 5 paragraphs. Write fast, and write neatly! Remember to fill up all the space provided.
+
+After all this, there would probably about a 4 to 5 minute buffer and checking time for you to relax, and look through your magnum opus one last time.
+
+So, to recap, at the start, use a few seconds to read the prompt, and then immediately think up a few examples that relates to this particular essay. At the end of 5 minutes, look at the examples that you have thought up. Do the examples argue for, or against the case given in the prompt? This shall become your stand in the essay. Then, spend 15 minutes madly writing the essay, and you’d have at least a couple of minutes left to check your work.
+\end{document}

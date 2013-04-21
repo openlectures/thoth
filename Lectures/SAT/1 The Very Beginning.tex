@@ -1,0 +1,95 @@
+\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+
+\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
+
+% Universal Fixes
+\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
+\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
+
+% Math
+\usepackage{amsmath} % Swiss-knife math package
+
+% Graphics
+\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
+\usepackage{graphicx} % Allows inserting of graphics and images
+\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
+
+% Layout and Format
+\usepackage{parallel} % Aligns paragraphs across columns
+\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
+\usepackage{showkeys} % Shows label references where they are defined
+\usepackage{csquotes} % Fixes inline and display quotations
+\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
+
+% Tables and Figures
+\usepackage{booktabs} % For drawing nice tables with proper line weights
+\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
+\usepackage{subfig} % Figure-ception - Allows figures within figures
+\usepackage{array}  % Extends options for column formats, alignments and layouts
+\usepackage{tabu} % Provides better control for tables and column widths
+\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
+\usepackage{multicol} % Allows spanning columns in tables
+\usepackage{caption} % Allows greater customization of captions and captions outside floats
+
+% Referencing
+\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
+\usepackage{cleveref} % Adds semantic naming when referencing figures
+\usepackage{varioref} % Introduces referencing by page instead of figure number
+
+% Fonts and Typography
+\usepackage{microtype} % Tweaks smallish fonts and kernings
+\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
+\usepackage{siunitx} % Provides support for typesetting SI units
+\usepackage{ellipsis} % Fixes space uneveness around ellipses
+\usepackage{url} % Allows encapsulated URLs to break across lines
+\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
+
+\usepackage{euler}
+
+\ifxetex
+\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
+\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
+\fi
+\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
+\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
+
+\setkomafont{title}{\fontencoding{EU1}\sffamily}
+\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
+
+% Title Information
+\title{1 The Very Beginning}
+\author{\large by Su Hang}
+\date{\small correct as of \today}
+\begin{document}
+\maketitle
+\section{Introduction}
+We know the agony of writing the SAT essay. You get up at an ungodly hour just to get to the test-centre, and then the first thing you have to do is to write a god damn essay that’s ⅓ of your writing score. Like, seriously?! Brain not functioning much.
+
+But. Fear not. Get the rhythm of essay writing into yourself, and you’ll churn out a beautiful essay on test day. We’re here to help you prepare. In this topic, you will find out about the requirements and expectations of the SAT essay, learn of handy tips that will come in useful as you prepare and as you write the essay, and also, discover how to structure your writing and the short 25 minutes of time you are given for the essay.
+\section{What They Want}
+The SAT does not expect a lot of its test takers. All they want is a first-draft quality essay based on a one sentence prompt that they will provide. You can’t write that much, anyway, since you are only given 25 minutes to write it. Your essay will be scored on a scale of 0 to 6, 0 being an atrocious essay that has no relevance to the issue whatever, and 6 being the best possible score. Let’s examine what College Board believes a top quality essay is. An essay with a score of 6 does all of these things.
+
+"Effectively and insightfully develops a point of view on the issue"
+
+Basically, you must have a stand and a thesis. So in your essay, you are not required to present counter-arguments and the like. You can just basically be a big bigoted bumbling beast and say only things that support your stand, and College Board will be totally fine with it.
+
+“Demonstrates outstanding critical thinking, using clearly appropriate examples, reasons and other evidence from studies, experience, or observations to support its position,”
+
+In your essay, you will need to cite examples that are relevant to the prompt, and back up those examples with your own reasoning and thoughts afterwards. We will come back to how to include all these essay elements later in the topic. Do note that you may not argue solely based on logic alone! That will net you a very low mark, as the SAT essay is an example driven one. If you assert “I think therefore I am” as your main argument through logical deduction, they won’t look too kindly upon your essay, but if you attribute it to Rene Descartes, they will be impressed. At the very least, mention one example in your essay and expound on that throughout. I will teach you how to pick examples for your SAT essay wisely later in this topic.
+
+"Is well organized and clearly focused, demonstrating clear coherence and smooth progression of ideas."
+
+Are you writing in a structured manner that would make sense to your reader, or are you just writing random things that happen to pop into your mind at any point in time? Employing the Hamburger structure, which I will cover in a later checkpoint, will help you organise your essay.
+
+"Exhibits skilful use of language, using a varied, accurate and apt vocabulary"
+
+You can throw in a moderate amount of complex vocabulary, but you must beware the pitfalls of using too many impressive sounding words that you may know the meaning of! Using too many difficult words can make your essay more tedious to read, while the erroneous usage of vocabulary may tell your grader that you’re just using them for the sake of impressing people. Like this grandiose sounding speech from V for Vendetta. Resulting in a lower score.
+
+"Demonstrates meaningful variety in sentence structure"
+
+If you’ve ever seen a UN resolution, you would know that they tend to be a full page of a long, unending sentence of stuff like, “Recommends that all LEDCs encourage the growth of alternative energy-producing companies in the local context;” “Condemns the actions of Muammar Gadaffi;” and “Decides to remain seized of the matter”. Very boring. Varying the ways that your sentences put forth ideas will keep your scorer awake and interested, and help you convey your ideas in an engaging manner.
+
+"Is free of most errors in grammar, usage and mechanics"
+
+This means that you should be very familiar with subject verb agreement, tenses, et cetera, et cetera! This is a place where reading comes in useful. You need to get used to the English language. This, we will cover in the topics for SAT Writing and Reading.
+\end{document}
