@@ -1,22 +1,74 @@
-\RequirePackage[l2tabu,orthodox]{nag}
-\documentclass[DIV=classic,11pt,numbers=noenddot,listof=totoc,bibliography=totoc,parskip]{scrartcl}
-\usepackage{fixltx2e,multicol,graphicx,url,caption,csquotes,amsmath,paralist,ellipsis,subfig,array,microtype,flafter,siunitx,cleveref,booktabs,textcomp}
-\usepackage[hypertexnames=false,plainpages=false]{hyperref}
-\usepackage{fontspec}
-\setsansfont[BoldFont={* Bold}]{Miso}
-\setmainfont[BoldFont={* Bold},ItalicFont={* Italic},BoldItalicFont={* Bold Italic}]{Courier Prime}
+\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+
+\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
+
+% Universal Fixes
+\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
+\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
+
+% Math
+\usepackage{amsmath} % Swiss-knife math package
+
+% Graphics
+\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
+\usepackage{graphicx} % Allows inserting of graphics and images
+\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
+
+% Layout and Format
+\usepackage{parallel} % Aligns paragraphs across columns
+\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
+\usepackage{showkeys} % Shows label references where they are defined
+\usepackage{csquotes} % Fixes inline and display quotations
+\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
+
+% Tables and Figures
+\usepackage{booktabs} % For drawing nice tables with proper line weights
+\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
+\usepackage{subfig} % Figure-ception - Allows figures within figures
+\usepackage{array}  % Extends options for column formats, alignments and layouts
+\usepackage{tabu} % Provides better control for tables and column widths
+\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
+\usepackage{multicol} % Allows spanning columns in tables
+\usepackage{caption} % Allows greater customization of captions and captions outside floats
+
+% Referencing
+\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
+\usepackage{cleveref} % Adds semantic naming when referencing figures
+\usepackage{varioref} % Introduces referencing by page instead of figure number
+
+% Fonts and Typography
+\usepackage{microtype} % Tweaks smallish fonts and kernings
+\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
+\usepackage{siunitx} % Provides support for typesetting SI units
+\usepackage{ellipsis} % Fixes space uneveness around ellipses
+\usepackage{url} % Allows encapsulated URLs to break across lines
+\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
+
+\usepackage{euler}
+
+\ifxetex
+\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
+\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
+\fi
+\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
+\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
+
+\setkomafont{title}{\fontencoding{EU1}\sffamily}
+\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
+\setkomafont{subsection}{\fontencoding{EU1}\sffamily\large}
+
+% Title Information
 \title{Alternative Theories of the Firm}
-\author{Linan Qiu}
-\date{}
+\author{\large by Linan Qiu}
+\date{\small correct as of \today}
 \begin{document}
 \maketitle
 \tableofcontents
-\newpage
 \section{Problems with Traditional Theory}
 \subsection{Maximizing Profits}
 So in traditional economics, we always assume that firms maximize profit. That’s not too bad an assumption at all, because who doesn’t want profits? But do all people want to maximize profits? Let me tell a story that one of my economics teachers loves to tell. When I take taxis, I love talking to the taxi drivers. They usually have interesting stories to tell. Same for my economics teacher. So he asked the taxi drivers if they earned more on a rainy day. Now think. Since more people require taxis on a rainy day, taxi drivers should be earning a lot more right? That’s actually not the case! In fact, most taxi drivers have a mental quota on how much they should earn a day. Once they fulfil that quota, they go home! So on a rainy day, they just fulfil that quota early, and go home early! Is that irrational? According to traditional economists, yes! But if so many people are irrational, and I’m pretty sure you can find other people who do not purely work to maximize profits, then there’s something wrong with traditional economics isn’t it? Well, there is. There are two reasons why people don’t maximize profits all the time. Let’s look at the first. First, it is difficult to maximize profits. Most firms do not have their own MC, MR curves. They don’t find the quantity at which they meet, then use that quantity to produce. In fact, they do it through trial and error, and most of the time they don’t produce at a point where profit is maximum. Also, find me a firm that uses economic costs in accounting procedures. Their chief financial officer will tell you that you are crazy. There are theories like game theory in economics which can help predict behavior, but even that is limited because it assumes firms know the consequences of their own actions and that of their opponents. If Microsoft can so accurately predict the actions of Apple, would it still end up like it is today? The second reason that profits are not maximized is because some firms simply have alternative aims. This is the one we are going to explore in more detail.
 \subsection{Alternative Aims of the Firm}
- In traditional economic analysis, we always assume that it is the owner of a firm that decides the output and the operations of a firm. Notice how I’ve always used the example “imagine you are the owner of Foxconn”. Well the assumption here is that the owner of Foxconn makes the decisions! But do they get to make all the decisions? However, many large companies nowadays are public limitied companies. The shareholders are the owners, and profits so as to increase their dividends and the value of their shares. Shareholders elect directors. Directors in turn employ professional managers who are often given considerable discretion in making decisions. There is therefore a separation between the ownership and control of a firm. This causes many interesting things to happen, some of which we will explore in the next lesson. But first, let’s look at how businesses are organized to understand this separation between owners and managers. Small firms are often governed by their owners. Think about your food stall uncle. He’s the boss, the cook, the finance guy. He’s everything. In larger firms, however, things become more complicated. Medium size firms are usually broken into separate departments. Your school probably operates via this model! There are departments like marketing, finance, production. For the school, there’s the teachers, then there are the finance people, the admin people, admissions people and so on. The managers of each department are normally directly responsible to a chief executive, or your principal - though for some schools in Bishan there’s not much of a difference. This chief executive coordinates all their activities, relaying the firm’s overall strategy and being responsible for inter departmental communication. We call this the U-form. U for unitary. When a firm expands beyond a certain size however, a U form structure is likely to become way too inefficient. this inefficiency arises from difficulties in communication, coordination and control. It becomes too difficult to manage the whole organisation structure from the centre. Then comes the M form of organization. To overcome these organizational problems, the firm can adopt a M (multi divisional) form of management. This suits larger firms. The firm is divided into a number of divisions. Think Apple. It has Apple South East Asia, Apple North America and so on. Each division could be responsible for a particular product or group of products, or a particular market. the day to day running and even certain long term decisions of each division would be the responsibility of the divisional managers. So now you can see that in most firms, the owner of the firm isn’t actually the guy running the things. But let’s complicate things a little more. As many business expand their operations further, often on a global scale, much more complex forms of organizations appear. There’s the H form, or that of a holding company. A holding company (or a parent company) is one that owns a controlling interest in othersubsidiary companies. these subsidiaries, in turn ma yalso have controlling interests in other companies. This is a complex web of ownerships. While the parent company has ultimate control over its various subsidiaries, it is likely that both tactical and strategic decision making is left to the individual companies within the organization. Many multinationals are organized along the lines of an international holding company, where overseas subsidiaries pursue their own independent strategy. For example, Sinopec is the largest oil and gas producer in China. It does not have a Singapore division. Rather, it has 3 to 4 Singapore subsidiary companies!
+ In traditional economic analysis, we always assume that it is the owner of a firm that decides the output and the operations of a firm. Notice how I’ve always used the example “imagine you are the owner of Foxconn”. Well the assumption here is that the owner of Foxconn makes the decisions! But do they get to make all the decisions? However, many large companies nowadays are public limited companies. The shareholders are the owners, and profits so as to increase their dividends and the value of their shares. Shareholders elect directors. Directors in turn employ professional managers who are often given considerable discretion in making decisions. There is therefore a separation between the ownership and control of a firm. This causes many interesting things to happen, some of which we will explore in the next lesson. But first, let’s look at how businesses are organized to understand this separation between owners and managers. Small firms are often governed by their owners. Think about your food stall uncle. He’s the boss, the cook, the finance guy. He’s everything. In larger firms, however, things become more complicated. Medium size firms are usually broken into separate departments. Your school probably operates via this model! There are departments like marketing, finance, production. For the school, there’s the teachers, then there are the finance people, the admin people, admissions people and so on. The managers of each department are normally directly responsible to a chief executive, or your principal - though for some schools in Bishan there’s not much of a difference. This chief executive coordinates all their activities, relaying the firm’s overall strategy and being responsible for inter departmental communication. We call this the U-form. U for unitary. When a firm expands beyond a certain size however, a U form structure is likely to become way too inefficient. this inefficiency arises from difficulties in communication, coordination and control. It becomes too difficult to manage the whole organisation structure from the centre. Then comes the M form of organization. To overcome these organizational problems, the firm can adopt a M (multi divisional) form of management. This suits larger firms. The firm is divided into a number of divisions. Think Apple. It has Apple South East Asia, Apple North America and so on. Each division could be responsible for a particular product or group of products, or a particular market. the day to day running and even certain long term decisions of each division would be the responsibility of the divisional managers. So now you can see that in most firms, the owner of the firm isn’t actually the guy running the things. But let’s complicate things a little more. As many business expand their operations further, often on a global scale, much more complex forms of organizations appear. There’s the H form, or that of a holding company. A holding company (or a parent company) is one that owns a controlling interest in other subsidiary companies. these subsidiaries, in turn ma also have controlling interests in other companies. This is a complex web of ownerships. While the parent company has ultimate control over its various subsidiaries, it is likely that both tactical and strategic decision making is left to the individual companies within the organization. Many multinationals are organized along the lines of an international holding company, where overseas subsidiaries pursue their own independent strategy. For example, Sinopec is the largest oil and gas producer in China. It does not have a Singapore division. Rather, it has 3 to 4 Singapore subsidiary companies!
 \subsection{Principal Agent Problem}
  So can the owners always make sure that the managers listen to them and act in the best interests of the company? This is an example of what is known in economics as the principal–agent problem. One of the features of a complex modern economy is that people (principals) have to employ others (agents) to carry out their wishes. If you want to go on holiday, it is easier to go to a travel agent to sort out the arrangements than to do it all yourself. Likewise, if you want to buy a house, it is more convenient to go to an estate agent. The point is that these agents have specialist knowledge and can save you, the principal, a great deal of time and effort. It is merely an example of the benefits of the specialisation and division of labour. It is the same with firms. They employ people with specialist knowledge and skills to carry out specific tasks. Companies frequently employ consultants to give them advice or engage the services of specialist firms such as an advertising agency. It is the same with the employees of the company. They can be seen as ‘agents’ of their employer. In the case of workers, they can be seen as the agents of management. Junior managers are the agents of senior management. Senior managers are the agents of the directors, who are themselves agents of the shareholders. Thus in large firms there is often a complex chain of principal– agent relationships. But these relationships have an inherent danger for the principal: there is asymmetric information between the two sides. The agent knows more about the situation than the principal – in fact this is part of the reason why the principal employs the agent in the first place. The danger is that the agent may well not act in the principal’s best interests, and may be able to get away with it because of the principal’s imperfect knowledge. The estate agent may try to convince the vendor that it is necessary to accept a lower price, while the real reason is to save the agent time, effort and expense. In firms too, agents frequently do not act in the best interests of their principals. For example, workers may be able to get away with not working very hard, preferring instead a quiet life. Similarly, given the divorce between the ownership and control of a company, managers (agents) may pursue goals different from those of shareholders (principals). They may just slack off, or in economics, cause what we call “x-inefficiency”.
 \subsection{Attitude Towards Risk}

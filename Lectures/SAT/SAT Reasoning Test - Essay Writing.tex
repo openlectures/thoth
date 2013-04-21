@@ -1,0 +1,196 @@
+\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+
+\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
+
+% Universal Fixes
+\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
+\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
+
+% Math
+\usepackage{amsmath} % Swiss-knife math package
+
+% Graphics
+\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
+\usepackage{graphicx} % Allows inserting of graphics and images
+\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
+
+% Layout and Format
+\usepackage{parallel} % Aligns paragraphs across columns
+\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
+\usepackage{showkeys} % Shows label references where they are defined
+\usepackage{csquotes} % Fixes inline and display quotations
+\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
+
+% Tables and Figures
+\usepackage{booktabs} % For drawing nice tables with proper line weights
+\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
+\usepackage{subfig} % Figure-ception - Allows figures within figures
+\usepackage{array}  % Extends options for column formats, alignments and layouts
+\usepackage{tabu} % Provides better control for tables and column widths
+\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
+\usepackage{multicol} % Allows spanning columns in tables
+\usepackage{caption} % Allows greater customization of captions and captions outside floats
+
+% Referencing
+\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
+\usepackage{cleveref} % Adds semantic naming when referencing figures
+\usepackage{varioref} % Introduces referencing by page instead of figure number
+
+% Fonts and Typography
+\usepackage{microtype} % Tweaks smallish fonts and kernings
+\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
+\usepackage{siunitx} % Provides support for typesetting SI units
+\usepackage{ellipsis} % Fixes space uneveness around ellipses
+\usepackage{url} % Allows encapsulated URLs to break across lines
+\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
+
+\usepackage{euler}
+
+\ifxetex
+\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
+\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
+\fi
+\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
+\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
+
+\setkomafont{title}{\fontencoding{EU1}\sffamily}
+\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
+\setkomafont{subsection}{\fontencoding{EU1}\sffamily\large}
+
+% Title Information
+\title{SAT Reasoning Test - Essay Writing}
+\author{\large by Su Hang}
+\date{\small correct as of \today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{The Very Beginning}
+\subsection{Introduction}
+We know the agony of writing the SAT essay. You get up at an ungodly hour just to get to the test-centre, and then the first thing you have to do is to write a god damn essay that’s ⅓ of your writing score. Like, seriously?! Brain not functioning much.
+
+But. Fear not. Get the rhythm of essay writing into yourself, and you’ll churn out a beautiful essay on test day. We’re here to help you prepare. In this topic, you will find out about the requirements and expectations of the SAT essay, learn of handy tips that will come in useful as you prepare and as you write the essay, and also, discover how to structure your writing and the short 25 minutes of time you are given for the essay.
+\subsection{What They Want}
+The SAT does not expect a lot of its test takers. All they want is a first-draft quality essay based on a one sentence prompt that they will provide. You can’t write that much, anyway, since you are only given 25 minutes to write it. Your essay will be scored on a scale of 0 to 6, 0 being an atrocious essay that has no relevance to the issue whatever, and 6 being the best possible score. Let’s examine what College Board believes a top quality essay is. An essay with a score of 6 does all of these things.
+
+"Effectively and insightfully develops a point of view on the issue"
+
+Basically, you must have a stand and a thesis. So in your essay, you are not required to present counter-arguments and the like. You can just basically be a big bigoted bumbling beast and say only things that support your stand, and College Board will be totally fine with it.
+
+“Demonstrates outstanding critical thinking, using clearly appropriate examples, reasons and other evidence from studies, experience, or observations to support its position,”
+
+In your essay, you will need to cite examples that are relevant to the prompt, and back up those examples with your own reasoning and thoughts afterwards. We will come back to how to include all these essay elements later in the topic. Do note that you may not argue solely based on logic alone! That will net you a very low mark, as the SAT essay is an example driven one. If you assert “I think therefore I am” as your main argument through logical deduction, they won’t look too kindly upon your essay, but if you attribute it to Rene Descartes, they will be impressed. At the very least, mention one example in your essay and expound on that throughout. I will teach you how to pick examples for your SAT essay wisely later in this topic.
+
+"Is well organized and clearly focused, demonstrating clear coherence and smooth progression of ideas."
+
+Are you writing in a structured manner that would make sense to your reader, or are you just writing random things that happen to pop into your mind at any point in time? Employing the Hamburger structure, which I will cover in a later checkpoint, will help you organise your essay.
+
+"Exhibits skilful use of language, using a varied, accurate and apt vocabulary"
+
+You can throw in a moderate amount of complex vocabulary, but you must beware the pitfalls of using too many impressive sounding words that you may know the meaning of! Using too many difficult words can make your essay more tedious to read, while the erroneous usage of vocabulary may tell your grader that you’re just using them for the sake of impressing people. Like this grandiose sounding speech from V for Vendetta. Resulting in a lower score.
+
+"Demonstrates meaningful variety in sentence structure"
+
+If you’ve ever seen a UN resolution, you would know that they tend to be a full page of a long, unending sentence of stuff like, “Recommends that all LEDCs encourage the growth of alternative energy-producing companies in the local context;” “Condemns the actions of Muammar Gadaffi;” and “Decides to remain seized of the matter”. Very boring. Varying the ways that your sentences put forth ideas will keep your scorer awake and interested, and help you convey your ideas in an engaging manner.
+
+"Is free of most errors in grammar, usage and mechanics"
+
+This means that you should be very familiar with subject verb agreement, tenses, et cetera, et cetera! This is a place where reading comes in useful. You need to get used to the English language. This, we will cover in the topics for SAT Writing and Reading.
+\section{SAT Essay Writing Tips}
+\subsection{Meet Your Graders}
+It is a bit of a hack, but knowing the psyche of whoever is marking your essay can actually help you curry favour with them, and help you score better.
+
+Now. Your essay’s graders are immensely bored American high school teachers (and rarely, college professors) looking to earn a little spare cash.
+
+Your essay will be scored by 2 graders. Each will have, on average, only a hundred and twenty seconds (that's two minutes) to scan through and give you a score ranging from 0 to 6. If the two graders disagree by more than 2 or so points, a third will be called in to arbitrate. Now that we know the target audience that we will be writing for, we shall next learn about how to use this to our advantage while writing the essay in the next checkpoint.
+\subsection{What This Means For You}
+Now that you know that your essay’s graders have to read, think about, and judge your essay, all in 2 minutes, you must make your first impressions count.
+
+First and foremost, fill up the full 2 pages. The claim that how much you write doesn’t matter is a lie, because when your graders have to judge you on so few indications, essay length becomes one of the more prominent flags of a student who is proficient at writing. Actual studies by an MIT Writing Director have found that there is a high level of correlation between the length of an essay, and the score it was given on the exam! Use large handwriting, leave more space between words, smoke your way through, whatever. Just fill it all up and you would have scored that first impression.
+
+Talking about impressions, you should use most of your bombastic vocabulary at the Introduction, and the Conclusion. Chances are, the reader’s attention will be at the peak when they start (New essay to grade!), and when they end (On to the next one! What score should I give this essay?) Therefore, make full use of this fact, and demonstrate your fantabulous command of the English language when they are paying the most attention. That is not to say that you need not use any in the paragraph texts.
+
+Also, do remember to keep your sentences succinct. Sometimes, it’s nice to have long and flowery descriptions of scenery and everything, but this is not the time to do it. Those same descriptions slow the pace of your essay and make it doubly hard to read and figure out what you’re saying. Make your sleepy grader see immediately that your essay is worthy of a high mark.
+
+Very importantly, write legibly. Your graders are having a hard time trying to get through thousands and thousands of essays over many days as it is. Why make it even harder for them to give you the mark? If they can’t read it, they’ll knock a few points off your score. So write neatly.
+
+Lastly, when you’re writing, do not, I repeat, do not veer off topic. Know what the topic is, and stay there. You might be knowledgeable about something close to it, but if it is deemed off topic, then you literally get a big fat zero, according to College Board guidelines.
+\subsection{Examples}
+When writing your essay itself, you should think of your examples, and then decide on your stand. You might think that you have a fixed stand on the issue you want to write about, but if you’re unlucky, you might just find that you’ll run out of steam halfway through the essay and cannot think up any more examples. In the interests of time, think up all your examples, and then write the essay.
+
+For your examples, avoid contentious topics in America. If you have been reading, you’d know of some of the more sensitive topics that Americans face today: separation of church and state, their war on terrorism (and Islam), gay rights, healthcare reform, evolution, et cetera, et cetera. If you write in praise of Charles Darwin, and your grader just happens to be a Bible-wielding fundamentalist, then there goes your score. Theoretically, graders are not supposed to penalise a response just because they disagree with it, but you never know what subconscious psychological effects may do to your score. Write to please everybody.
+
+A good rule is to choose the examples that you know most about! If you have the perfect example, but don’t know much about it and just try to smoke your way through, chances are that you won’t be able to write anything immensely coherent or detailed within the short time you have. Do yourself a favour and write about things you’re familiar with.
+
+And although it may seem unethical, it is totally okay to make stuff up. Sometimes, a well placed name-drop can help your case along. If you know that Sir Jonathan Ive is Senior Vice President of Industrial Design at Apple, bonus points to you, because wow, you know your world affairs really well. But if you can’t remember the poor bugger’s name, just make one up. Like Sir Jack Irving or something. The grader will probably not know who you’re talking about either way because there really is no way to check within that short timespan that they have to grade your essay, but they will still be impressed by your knowledge. Just don’t try to claim that Hitler had like, 3 moustaches, or something.
+
+Now that we know how to please our graders, we will look at how to polish and perfect those shotgun essays in the next checkpoint.
+\subsection{How To Practice}
+When you practice writing the SAT essay, whether as an individual component, or as part of a complete 5 hour marathon, the most important thing to do, is to always, always, time yourself. Timing is usually the most tricky thing to manage during the essay, regardless of your writing skill level. During the actual SAT, you will only be given 25 minutes to think, plan, and write your essay. These 25 minutes will fly by even faster when you are under stress on test day. So, when you are practicing, give yourself 20 minutes instead of 25, and try and force yourself to stop at that time, so that you have time to check on the actual day.
+
+After writing the essay, take a photo or a scan of it, and send it to your grammar nazi of a friend to read and grade, on a scale of 0-6. Painful as it may be, ask them why they gave you a certain grade, and, more importantly, ask for advice on how you can improve. Keep those things in mind and apply them as you write your next essay, or else you will just be stuck grinding away practicing the same wrong things over and over again without correcting them!
+\subsection{Stockpiling}
+Prepare some versatile examples to use in your essay. If, hypothetically, you are a huge fan of Apple and Steve Jobs, and know of everything that goes on regarding them, you may choose to write about Apple, regardless of what the prompt is. Let’s take this idea for a spin with prompts that have appeared on the test before.
+
+If the prompt is, “Do all people need to be creative?” you can answer, “Yes! As a tech company, Apple has practically single handedly built the smartphone market from the ground up in the past few years with their revolutionary, best selling iPhone.” If the prompt is, “Do people truly benefit from hardship and misfortune?” you can answer, “Yes. Steve Jobs was ousted from Apple after a power struggle, but he went on to found NeXT and acquired Pixar. Through his trials and tribulations, he gained experience as a leader, and when he eventually returned to Apple again, he saved the company from the brink of bankruptcy, and turned it into the world’s most profitable tech company.” And so on. The moral of the story is, as long as you are familiar with a certain topic, you can usually turn what you know around to fit what the prompt is asking for. Choose about 2 or 3 topics that you are interested in, and are willing to read about, to prepare for test day.
+\subsection{Other Things That May Work}
+You can choose to listen to this section, and you can choose to not. Just like some people choose to burn incense and drink the ashes for good test scores, these strategies may or may not work for you.
+
+You can use supporting points familiar to the American public. Or not. Such as Dickens. Or the Emancipation Proclamation. Or the Romney "Rmoney" gaffe. Your graders, as true blue hegemonic Americans, may not want to hear about the opposition politics in Hougang, Singapore. On the other hand, if you are not familiar with American affairs, it is perfectly okay to stick to what English speaking people all over the world should know. Such as Harry Potter. And the Greek debt crisis. On the other hand, if you cite examples that every single American high-schooler would cite, your scorer would likely already be bored with those examples and would not like reading your essay.
+
+Or you can start your essay with the prompt’s keyword. Some people may find it boring. Some may find it to be easier that way. Either way, it’s a no-brainer way to tell your grader that your essay is on track.
+
+Another strategy is, don’t use ‘I’ in your essay. In an effort to appear learned and distinguished, scientists have devised a way to objectivise their scientific findings such that their results seem to speak simple truths. That is, to avoid the self when talking. Using ‘I’ makes your essay sound like something an elementary school kid would write. 
+
+Keep these things in mind during practice, and during the test itself. In the next lesson, we will be looking at exactly how to go about writing the SAT essay.
+\section{Writing and Structuring Your Essay}
+\subsection{The 5 Paragraph Hamburger Rule}
+The Hamburger essay, as you may or may not have learnt of before, has a particular structure that allows you to present your arguments in an organised and coherent manner. The general structure of one looks like this. You start off with the introduction, the cap bread on top, and then go on to the supporting points, the meat patty, lettuce, tomato, and cheese of the hamburger. After including all that wholesome goodness, you end off with the conclusion, another capping bread, giving you a well put together essay that is easy to for the reader to ingest, and digest.
+
+Lots of people, me included, scoff at the usage of a "template" for writing essays. But the plain and simple truth is that you are taking a standardised test, and a standardised test with an insane time limit at that. Stick to this template, and you’ll never go wrong. Even if you are an advanced writer who may think that a standard template is beneath you. Nobody is going to dig your essay up and laugh at your use of this elementary essay template. All colleges see, is the score you get from the essay, and for all you know, your creative writing hijinks may not be received well by the graders. The hamburger, on the other hand, is universal and will help you to score well consistently, for any kinds of graders you may encounter. In the following checkpoints, we will look into each of the components of this tasty essay hamburger in greater detail.
+\subsection{Writing an Introduction}
+Your SAT essay’s introduction has essentially two parts that can be tackled with a sentence each. These two parts are the starting hook, and your thesis statement.
+
+The function of the hook is to, well, capture your reader’s attention and signal to them that there is a great essay that is worth reading in front of them. You can start with something interesting, like a quote, or a pun on an aphorism, like say, "The early bird gets the can of worms." Alternatively, you can choose to sound more level headed by giving a conventional lay of the land if you’re not up to the first method under stress. If you choose this second way, do try to spice it up with your vocabulary and wording! Let’s say that our prompt is, "Do all people need to be creative?", and our stand is that, yes, all people need to be creative. Then we can write something like, "Creativity, as a habit of mind, is typically attributed to artists who have need for the unconventional to entertain their audiences." Through this sentence, you can establish the context and the tone of the essay. This clues the grader into what they are in for for the next two minutes or so.
+
+Then, state your stand in a thesis statement, in one sentence. A clearly defined stand is a basic requirement for any SAT essay! All prompts they give have two stands you can take: for, or against. So, a good thesis sentence should state 1) the issue given in the prompt, and 2) whether you are for, or against statement in the prompt. You may find that simply just saying, "Yes, I agree that creativity is essential for everybody" is quite a dumb way of going about it. Instead, try going in from a less direct approach by embellishing the sentence and paraphrasing the prompt. Going back to the creativity prompt, the thesis statement can be, "It is, however, sadly underrated by others: people of all walks of life would surely find that a touch of novelty can drastically augment their life and work." This thus establishes your stand on the issue in the essay without sounding like you are just lazily copying off the prompt.
+
+To recap, the introduction to your SAT essay should comprise of a one sentence hook, and a one sentence thesis statement. Don’t forget to show off your vocabulary as you are writing the introduction; the start is when the grader is paying the most attention! We will look at crafting the meat of the essay, the supporting points, in the next checkpoint.
+\subsection{Writing the Supporting Points}
+So now that we have our stand down pat, how do we go about writing the rest of the essay? Collegeboard’s instructions are to "Support your position with reasoning and examples taken from your reading, studies, experience, or observations." Let’s break this down. The position is mentioned in the singular. This means that whichever stand you chose in the introduction, you are not to deviate from it when writing! In each supporting point, both reasoning and examples should be employed to support the stand that you have indicated in the thesis statement. 
+
+In the SAT essay, you should generally provide two to three examples with corresponding reasoning and elaboration; two if each point is long, three if each is short. Put each point in a paragraph of its own, and just keep writing until you are left with about 5 lines on the last page for your conclusion.
+
+Each supporting paragraph is like a self-contained mini essay of its own, too, with its introduction, body, and contextualisation. When you are writing the essay, it’s enough to just write one sentence for each element of a supporting point.
+
+First, provide a one sentence lead in, a link from the previous content. This helps your essay flow better, providing logical progression from one point to another. So if your prompt is, "Do all people need to be creative?", and you answer yes, then you can write, "In science, even stereotypically stuffy researchers do their best work when struck by a bolt of inspiration from the heavens." "In science" helps the reader re-orientate themselves with the new example you are now raising, and adding the adverb "even" helps heighten the impact you are making with this new case!
+
+Then, cite the example you wish to use in a sentence or two with appropriate detail. This forms the main "meat" of your point, so craft it well and put in as much detail as you can muster to make it believable! Following from the lead in, you can write, "The discoverer of the benzene ring thought up its structure after dreaming of a snake eating its own tail after an afternoon nap, when for months prior to that he had made no progress at all."
+
+Lastly, elaborate on your example by reasoning out, in one sentence, how it is relevant to the context of the question. This reiterates to your grader that you aren’t just wandering off into unrelated territory, and that you know your shit about this topic. Continuing from the benzene ring example, you can write "By connecting what he had seen in that phantasmagoria of a dream to his work using his right, creative, brain, he made one of the most fundamental discoveries in biochemistry." Short, sweet, to the right point.
+
+Lather, rinse, and repeat for the next one or two supporting paragraphs that you write. In the next checkpoint, we will find out how to write a sterling finale to your essay.
+\subsection{Writing a Conclusion}
+After you’ve done all that work on your essay, the last lap isn’t really too hard to finish off. Like in the introduction, you would want to leave a lasting, well, last impression. This concluding affair is accomplished in two sentences: a rephrase of the thesis, and an impactful endnote.
+
+First, subtly rephrase your thesis, and summarise the supporting points that you put forth in your essay. For example, if your prompt is, "Do all people need to be creative?", and you answer yes, this can be as simple as something like "Thus, in fields, that are not usually associated with creativity such as science and politics, we see that the underdog is flourishing yet."
+
+To end off, write a sentence worth of witticism, humour, or rhetoric; just write something memorable and not too cheesy. This is the last memory your reader will have of this essay as they are debating what marks to give you, so make it count! Going back to the creativity prompt, you may choose to end off with, "If such prominent and important personages in our society subscribe to such an overlooked life habit, who are the rest of us to disclaim its usefulness for all of human civilisation?"
+
+Et voila. It is done. Take a deep breath, drink some water, and check through your work in the remaining time for embarrassing grammar, spelling, lexical choice errors. Try and fill up blank space remaining if you have any left.
+
+So now that you know exactly how to write a thumping good essay, we will show you how to manage your measly 25 minutes of test time in the next checkpoint.
+\subsection{How to Fully Utilise Your 25 Minutes}
+Lots of people complain about the insanely stingy 25 minutes that the SAT gives for writing a coherent, witty, entertaining essay. But what they don’t know, is that with proper planning and practice, an entire essay can be written with 5 minutes to spare for checking! Well, so how do we do that?
+
+When the proctor says, "You may turn the page and begin now," give yourself a few seconds of reading time. When I say a few seconds, I mean a few seconds, because that question page really does contain a lot of superfluous information that would just waste your time if you tried reading it. The only thing worth reading is the prompt, found here on the page. This prompt is usually a yes/no question that you can take a clearly defined stand on. 
+
+Then, use 5 minutes for brainstorming time. Think of 3 or 4 examples relating to the prompt, and write them down so you don’t forget! You can read the stuff in the box for inspiration if you get stuck and can’t think of what to write about. 
+
+Once you’ve thought up the examples, listen to what the examples tell you. If they agree with the prompt, then your stand should be that you concur. And vice versa. Under this level of stress, it is generally easier to think of your examples first, and then decide your stand, instead of deciding your stand and finding out later on that you can’t think of any more to support your point. If you don’t believe me, you can experiment with this during your essay practice time and find out which is a better way for yourself!
+
+After brainstorming, immediately start writing your essay using the Hamburger model that we covered in the previous checkpoints. You will find that it is perfectly possible to finish writing everything within 15 minutes. This means that on average, you should spend no more than 3 min on each of your 5 paragraphs. Write fast, and write neatly! Remember to fill up all the space provided.
+
+After all this, there would probably about a 4 to 5 minute buffer and checking time for you to relax, and look through your magnum opus one last time.
+
+So, to recap, at the start, use a few seconds to read the prompt, and then immediately think up a few examples that relates to this particular essay. At the end of 5 minutes, look at the examples that you have thought up. Do the examples argue for, or against the case given in the prompt? This shall become your stand in the essay. Then, spend 15 minutes madly writing the essay, and you’d have at least a couple of minutes left to check your work.
+\end{document}
