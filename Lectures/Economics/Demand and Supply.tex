@@ -1,63 +1,5 @@
-\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+\RequirePackage{../../dominatrix}
 
-\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
-
-% Universal Fixes
-\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
-\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
-
-% Math
-\usepackage{amsmath} % Swiss-knife math package
-
-% Graphics
-\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
-\usepackage{graphicx} % Allows inserting of graphics and images
-\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
-
-% Layout and Format
-\usepackage{parallel} % Aligns paragraphs across columns
-\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
-\usepackage{showkeys} % Shows label references where they are defined
-\usepackage{csquotes} % Fixes inline and display quotations
-\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
-
-% Tables and Figures
-\usepackage{booktabs} % For drawing nice tables with proper line weights
-\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
-\usepackage{subfig} % Figure-ception - Allows figures within figures
-\usepackage{array}  % Extends options for column formats, alignments and layouts
-\usepackage{tabu} % Provides better control for tables and column widths
-\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
-\usepackage{multicol} % Allows spanning columns in tables
-\usepackage{caption} % Allows greater customization of captions and captions outside floats
-
-% Referencing
-\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
-\usepackage{cleveref} % Adds semantic naming when referencing figures
-\usepackage{varioref} % Introduces referencing by page instead of figure number
-
-% Fonts and Typography
-\usepackage{microtype} % Tweaks smallish fonts and kernings
-\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
-\usepackage{siunitx} % Provides support for typesetting SI units
-\usepackage{ellipsis} % Fixes space uneveness around ellipses
-\usepackage{url} % Allows encapsulated URLs to break across lines
-\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
-
-\usepackage{euler}
-
-\ifxetex
-\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
-\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
-\fi
-\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
-\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
-
-\setkomafont{title}{\fontencoding{EU1}\sffamily}
-\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
-\setkomafont{subsection}{\fontencoding{EU1}\sffamily\large}
-
-% Title Information
 \title{Demand and Supply}
 \author{\large by Linan Qiu}
 \date{\small correct as of \today}
@@ -67,7 +9,7 @@
 
 \section{You Demand}
 \subsection{Visualizing Demand}
-Before I bore you with the things like demand curve, supply curve, consumer surplus and producer surplus, let's go into something simpler. Everyone knows cookies. I have a pack of cookise here. Let's say that the pack of cookies cost five dollars. You think that the cookies are expensive. I can't afford that many cookies. I'm just going to buy one packet of cookies. Now imagine a graph. The vertical axis is the price. The horizontal axis is the quantity. At 5 dollars, I buy one pack of cookies. If I drop the price to 4 dollars, you can buy more cookies - you buy two packs. If I lower the price a little bit more, to 3 dollars, I'll buy even more cookies - three packets. If I lower the price to 2 dollars, you might buy 4 packets. To 1 dollar, 5 packets. What you see happening is that on the graph, you have 5 dots. And these dots show the relationship between the price and the quantity. So in the next checkpoint, you will see how these points can be joined together to form the demand curve.
+Before I bore you with the things like demand curve, supply curve, consumer surplus and producer surplus, let's go into something simpler. Everyone knows cookies. I have a pack of cookies here. Let's say that the pack of cookies cost five dollars. You think that the cookies are expensive. I can't afford that many cookies. I'm just going to buy one packet of cookies. Now imagine a graph. The vertical axis is the price. The horizontal axis is the quantity. At 5 dollars, I buy one pack of cookies. If I drop the price to 4 dollars, you can buy more cookies - you buy two packs. If I lower the price a little bit more, to 3 dollars, I'll buy even more cookies - three packets. If I lower the price to 2 dollars, you might buy 4 packets. To 1 dollar, 5 packets. What you see happening is that on the graph, you have 5 dots. And these dots show the relationship between the price and the quantity. So in the next checkpoint, you will see how these points can be joined together to form the demand curve.
 \subsection{Connecting the Dots}
 Cookies might be a simple example because if you are a single person, you can buy 5 packets of cookies, then you arrange them in a line and you get a curve. But what if I were to try and construct a demand curve for Apple computers? Each apple computer costs 3000 dollars. Even if I lower the price to 2900, you are not going to just buy another Apple computer the price lowered to 2900. How am I going to construct a downward sloping demand curve? Then don't think of it as a single person because the demand curve is never meant for a single person! The demand curve is meant for a market. So let's put this in perspective. Imagine that you are in a school. The school has a population of 1000. So if I sell the Apple computer at 3000 dollars, then maybe 100 people will buy it and each of them buys one. If I lower it to 2900, some more people might want to buy it. 120 people will buy it! If you lower the price of Apple computers more and more and you chart this progress, again you can form a line. So it's not just about a single person, but a market as a whole. When we connect all these lines, it becomes a demand curve for the market. So this is how you construct a demand curve for every single thing in the world.
 \subsection{Consumer Surplus}
@@ -96,7 +38,7 @@ Let's talk about your most important lesson in economics. Imagine a country wher
 \newpage
 \section{Shifts}
 \subsection{Demand Moves}
-In real life, the demand curve and the supply curve never stays constant. It moves all the time. For example, oil. The demand for oil has increased. You should picture the demand curve moving up or to your right. Let's say that demand for oil has increased. The demand curve goes up, and they form a new intersection. What is the explanation then? A lot of students say that because the demand curve moved up, there is a new intersection and that gives a new equilibrium price and quantity. They are merely describing the movement. They are not explaining how the new equilibrium quantity and price came about. That will not suffice. What you should do instead is this. When the demand curve moves up, at the original equilibrium price and quantity, the quantity demanded is more than the quantity supplied because of the ne w demand curve. When the new quantity demanded is higher than the quantity supplied, the consumers bid up the price due to the shortage. They push up the price and when the producers see the higher price, they produce more in response. Eventually, we arrive at a higher price and a higher equilibrium quantity. This is how you should explain the movement of a demand curve.
+In real life, the demand curve and the supply curve never stays constant. It moves all the time. For example, oil. The demand for oil has increased. You should picture the demand curve moving up or to your right. Let's say that demand for oil has increased. The demand curve goes up, and they form a new intersection. What is the explanation then? A lot of students say that because the demand curve moved up, there is a new intersection and that gives a new equilibrium price and quantity. They are merely describing the movement. They are not explaining how the new equilibrium quantity and price came about. That will not suffice. What you should do instead is this. When the demand curve moves up, at the original equilibrium price and quantity, the quantity demanded is more than the quantity supplied because of the new demand curve. When the new quantity demanded is higher than the quantity supplied, the consumers bid up the price due to the shortage. They push up the price and when the producers see the higher price, they produce more in response. Eventually, we arrive at a higher price and a higher equilibrium quantity. This is how you should explain the movement of a demand curve.
 \subsection{Supply Moves}
 Let's talk about supply. Let's use the example of oil again and we found a new oil field. This increases the supply of oil. Then the supply curve moves to the right. At the original equilibrium price and quantity, you find that the quantity supplied is much higher than the quantity demanded. What then happens is that the suppliers notice the huge surplus because the quantity demanded is much lower than the quantity supplied. The producers will produce less and the price goes down according to the supply curves and eventually they reach a new equilibrium where there is absolutely no shortage. This is the new equilibrium price and quantity.
 \subsection{Demand Moves More}

@@ -1,63 +1,5 @@
-\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+\RequirePackage{../../dominatrix}
 
-\documentclass[DIV=calc,11pt,parskip,numbers=noenddot]{scrartcl} % Uses the KOMA-Script package with customizations
-
-% Universal Fixes
-\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
-\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
-
-% Math
-\usepackage{amsmath} % Swiss-knife math package
-
-% Graphics
-\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
-\usepackage{graphicx} % Allows inserting of graphics and images
-\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
-
-% Layout and Format
-\usepackage{parallel} % Aligns paragraphs across columns
-\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
-\usepackage{showkeys} % Shows label references where they are defined
-\usepackage{csquotes} % Fixes inline and display quotations
-\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
-
-% Tables and Figures
-\usepackage{booktabs} % For drawing nice tables with proper line weights
-\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
-\usepackage{subfig} % Figure-ception - Allows figures within figures
-\usepackage{array}  % Extends options for column formats, alignments and layouts
-\usepackage{tabu} % Provides better control for tables and column widths
-\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
-\usepackage{multicol} % Allows spanning columns in tables
-\usepackage{caption} % Allows greater customization of captions and captions outside floats
-
-% Referencing
-\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
-\usepackage{cleveref} % Adds semantic naming when referencing figures
-\usepackage{varioref} % Introduces referencing by page instead of figure number
-
-% Fonts and Typography
-\usepackage{microtype} % Tweaks smallish fonts and kernings
-\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
-\usepackage{siunitx} % Provides support for typesetting SI units
-\usepackage{ellipsis} % Fixes space uneveness around ellipses
-\usepackage{url} % Allows encapsulated URLs to break across lines
-\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
-
-\usepackage{euler}
-
-\ifxetex
-\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
-\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
-\fi
-\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
-\usepackage{concrete} % Swaps out ancient Computer Modern font for Latin Modern
-
-\setkomafont{title}{\fontencoding{EU1}\sffamily}
-\setkomafont{section}{\fontencoding{EU1}\sffamily\Large\centering}
-\setkomafont{subsection}{\fontencoding{EU1}\sffamily\large}
-
-% Title Information
 \title{Monetary Policy}
 \author{\large by Linan Qiu}
 \date{\small correct as of \today}
@@ -70,7 +12,7 @@ Welcome to the topic of monetary policy. Before we go into monetary policy, whic
 \subsection{A More Interesting Definition of Interest Rate}
 Now let’s think from the borrower’s perspective. The interest rate can be thought of as the price of borrowing money. Why? If I borrow \$100, and the interest rate is 2\% per annum, that means next year, I will have to return \$102. The extra \$2, or the additional amount that can be attributed to the 2\% interest rate, is the price of borrowing \$100. Let’s try another example. If I borrow \$5000, and the interest rate is 10\% per annum, then after one year, I will owe the lender \$5500. The \$500, or the interest, caused by the interest rate of 10\%, is the price of me borrowing that \$5000. 
 \subsection{Demand of Money}
-Now money has no value by itself. It is just a piece of paper. Really? Why do people say, “I want to have more money!” then? Well, they don’t actually want money. They want the things that money can buy. They want cars, food, and cookies. And money is precious only for the the things it can buy. So it is natural that the demand of money depends on the real economy. Well, turns out it does. The demand of money depends on 2 things - transaction and assets. First, transaction cost. In order to get money, you go to the ATM. Let’s say there’s only one ATM in the country you live in. Then, it is very inconvenient for you to go to the ATM. The cost of one transaction of withdrawing money is very high. So when you go to the ATM, you’d probably want to draw a lot of money at once. If, however, there are many ATMs around, or it is simply very convenient for you to collect money, then the transaction cost of money is very low. Then, you won’t demand a huge amount of money at once. In fact, you’d probably keep very little money in our wallets (as we do in most modern countries) and have a low demand for money.  So if transaction costs are high, there will be high money demand. If transaction cost is low, there will be low money demand. Now let’s assume that the transaction cost doesn’t really change (because in reality, it does not really change through time!) Then money demand depends on the second thing - assets. Let’s see. When you hold on to money in your pocket, is your money in the bank? No! It is in your pocket as cold hard cash. You are not saving it in the bank, nor are you investing it anywhere. Hence, you are losing the returns you could have got by investing it or by saving it - the interest rate that you can get on these cash. Hence, if interest rates increase, would you prefer holding on to the money and foregoing all the returns you can get, or will you want to save more money (or invest it somewhere else?) You will probably want to not keep the money in your wallet and put it in a bank. Hence, money demand is low when the interest rates are high. Similarly, when interest rates are low, the cost of holding on to money is low, hence money demand will be high. If we assume that transaction costs are constant, then the asset motive will cause the money demand curve to slope downwards. Money demand will then be low when interest rates are high, and money demand will be high when interest rates are low. Hence the shape of this money demand. When high interest rate, low money demand, low interest rate, high money demand. 
+Now money has no value by itself. It is just a piece of paper. Really? Why do people say, “I want to have more money!” then? Well, they don’t actually want money. They want the things that money can buy. They want cars, food, and cookies. And money is precious only for the the things it can buy. So it is natural that the demand of money depends on the real economy. Well, turns out it does. The demand of money depends on 2 things - transaction and assets. First, transaction cost. In order to get money, you go to the ATM. Let’s say there’s only one ATM in the country you live in. Then, it is very inconvenient for you to go to the ATM. The cost of one transaction of withdrawing money is very high. So when you go to the ATM, you’d probably want to draw a lot of money at once. If, however, there are many ATMs around, or it is simply very convenient for you to collect money, then the transaction cost of money is very low. Then, you won’t demand a huge amount of money at once. In fact, you’d probably keep very little money in our wallets (as we do in most modern countries) and have a low demand for money. So if transaction costs are high, there will be high money demand. If transaction cost is low, there will be low money demand. Now let’s assume that the transaction cost doesn’t really change (because in reality, it does not really change through time!) Then money demand depends on the second thing - assets. Let’s see. When you hold on to money in your pocket, is your money in the bank? No! It is in your pocket as cold hard cash. You are not saving it in the bank, nor are you investing it anywhere. Hence, you are losing the returns you could have got by investing it or by saving it - the interest rate that you can get on these cash. Hence, if interest rates increase, would you prefer holding on to the money and foregoing all the returns you can get, or will you want to save more money (or invest it somewhere else?) You will probably want to not keep the money in your wallet and put it in a bank. Hence, money demand is low when the interest rates are high. Similarly, when interest rates are low, the cost of holding on to money is low, hence money demand will be high. If we assume that transaction costs are constant, then the asset motive will cause the money demand curve to slope downwards. Money demand will then be low when interest rates are high, and money demand will be high when interest rates are low. Hence the shape of this money demand. When high interest rate, low money demand, low interest rate, high money demand. 
 \subsection{Supply of Money}
 The supply of money is determined by the central bank in an economy. Without counterfeiters (which do not make up a significant portion of the money supply in most economies), the central bank in an economy, for example in the States that’s the Federal Reserve, prints all the money in an economy. There are many tiers of calculation of money: M1, M2, M3 for example. However, all you have to know is that money supply is determined by the central bank. So if the money supply is determined by the central bank, then it is vertical line here, simply because the central bank sets the money supply in an economy! 
 \subsection{Short Term Interest Rate}
